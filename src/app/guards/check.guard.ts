@@ -11,7 +11,7 @@ export class CheckGuard implements CanDeactivate<FundingComponent> {
     component: FundingComponent,
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-      console.log("UnsearchedTermGuard");
+      console.log("Guard");
       console.log(route.params);
       console.log(state.url);
       return component.canExit();
